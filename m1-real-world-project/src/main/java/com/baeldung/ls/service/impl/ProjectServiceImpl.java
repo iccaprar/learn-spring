@@ -6,19 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.baeldung.ls.persistence.model.Project;
-import com.baeldung.ls.persistence.repository.IProjectRepository;
-import com.baeldung.ls.service.IProjectService;
+import com.baeldung.ls.persistence.repository.ProjectRepository;
+import com.baeldung.ls.service.ProjectService;
 
 @Service
-public class ProjectServiceImpl implements IProjectService {
+public class ProjectServiceImpl implements ProjectService {
+
+    private final ProjectRepository projectRepository;
 
     @Autowired
-    private IProjectRepository projectRepository;
-
-    public ProjectServiceImpl() {
-    }
-
-    public ProjectServiceImpl(IProjectRepository projectRepository) {
+    public ProjectServiceImpl(ProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
     }
 
@@ -31,13 +28,4 @@ public class ProjectServiceImpl implements IProjectService {
     public Project save(Project project) {
         return projectRepository.save(project);
     }
-
-    public IProjectRepository getProjectRepository() {
-        return projectRepository;
-    }
-
-    public void setProjectRepository(IProjectRepository projectRepository) {
-        this.projectRepository = projectRepository;
-    }
-
 }

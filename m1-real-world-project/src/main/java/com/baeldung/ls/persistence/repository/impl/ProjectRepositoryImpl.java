@@ -7,12 +7,12 @@ import java.util.Optional;
 import org.springframework.stereotype.Repository;
 
 import com.baeldung.ls.persistence.model.Project;
-import com.baeldung.ls.persistence.repository.IProjectRepository;
+import com.baeldung.ls.persistence.repository.ProjectRepository;
 
 @Repository
-public class ProjectRepositoryImpl implements IProjectRepository {
+public class ProjectRepositoryImpl implements ProjectRepository {
 
-    private List<Project> projects = new ArrayList<>();
+    private final List<Project> projects = new ArrayList<>();
 
     @Override
     public Optional<Project> findById(Long id) {
@@ -33,5 +33,4 @@ public class ProjectRepositoryImpl implements IProjectRepository {
         }
         return project;
     }
-
 }
