@@ -10,7 +10,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="learn-spring-m1" target="11" />
       <module name="task-management-app-lesson" target="11" />
     </bytecodeTargetLevel>
   </component>
