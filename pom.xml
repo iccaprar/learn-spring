@@ -24,4 +24,10 @@
         <module>beanPostProcessor-and-beanFactoryPostProcessor-end</module>
     </modules>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
+        <maven.compiler.release>11</maven.compiler.release>
+    </properties>
+
 </project>
