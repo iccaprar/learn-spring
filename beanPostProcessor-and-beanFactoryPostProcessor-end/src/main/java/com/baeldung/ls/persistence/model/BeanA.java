@@ -12,7 +12,11 @@ public class BeanA {
 
     @PostConstruct
     public void post() {
-        LOG.info("value of the property foo is: {}", this.foo);
+        LOG.info("in post() - value of the property foo is: {}", this.foo);
+    }
+
+    public void initMethod() {
+        LOG.info("in initMethod() - value of the property foo is: {}", this.foo);
     }
 
     public String getFoo() {

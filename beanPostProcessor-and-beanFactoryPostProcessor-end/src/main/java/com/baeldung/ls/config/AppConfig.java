@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Bean
+    @Bean(initMethod = "initMethod")
     public BeanA beanA() {
         return new BeanA();
     }
