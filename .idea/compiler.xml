@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="basics-of-java-configuration-and-the-spring-context-lesson-end" />
-        <module name="scopes-of-spring-beans-lesson-start" />
-        <module name="beanPostProcessor-and-beanFactoryPostProcessor-end" />
         <module name="basics-of-java-configuration-and-the-spring-context-lesson-start" />
         <module name="lifecycle-of-a-bean-lesson-end" />
-        <module name="defining-beans-component-scanning-and-bean-annotations-lesson-start" />
-        <module name="simple-wiring-and-injection-lesson-end" />
-        <module name="simple-wiring-and-injection-lesson-start" />
-        <module name="defining-beans-component-scanning-and-bean-annotations-lesson-end" />
-        <module name="scopes-of-spring-beans-lesson-end" />
-        <module name="beanPostProcessor-and-beanFactoryPostProcessor-start" />
+        <module name="the-spring-application-context-end" />
         <module name="lifecycle-of-a-bean-lesson-start" />
+        <module name="the-spring-application-context-start" />
+        <module name="beanPostProcessor-and-beanFactoryPostProcessor-end" />
+        <module name="defining-beans-component-scanning-and-bean-annotations-lesson-end" />
+        <module name="beanPostProcessor-and-beanFactoryPostProcessor-start" />
+        <module name="simple-wiring-and-injection-lesson-end" />
+        <module name="scopes-of-spring-beans-lesson-end" />
+        <module name="scopes-of-spring-beans-lesson-start" />
+        <module name="defining-beans-component-scanning-and-bean-annotations-lesson-start" />
+        <module name="simple-wiring-and-injection-lesson-start" />
+        <module name="basics-of-java-configuration-and-the-spring-context-lesson-end" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,6 +36,8 @@
       <module name="scopes-of-spring-beans-lesson-start" target="11" />
       <module name="simple-wiring-and-injection-lesson-end" target="11" />
       <module name="simple-wiring-and-injection-lesson-start" target="1.8" />
+      <module name="the-spring-application-context-end" target="1.8" />
+      <module name="the-spring-application-context-start" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -50,6 +54,8 @@
       <module name="scopes-of-spring-beans-lesson-start" options="-parameters" />
       <module name="simple-wiring-and-injection-lesson-end" options="-parameters" />
       <module name="simple-wiring-and-injection-lesson-start" options="-parameters" />
+      <module name="the-spring-application-context-end" options="-parameters" />
+      <module name="the-spring-application-context-start" options="-parameters" />
     </option>
   </component>
 </project>
