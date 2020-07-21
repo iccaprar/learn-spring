@@ -30,10 +30,6 @@ public class Project {
         this.dateCreated = dateCreated;
     }
 
-    public Project(String name, LocalDate dateCreated) {
-        this(null, name, dateCreated);
-    }
-
     public Project(Project project) {
         this(project.getId(), project.getName(), project.getDateCreated());
     }
